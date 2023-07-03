@@ -20,7 +20,7 @@ class UserController extends Controller
     {
         $request = $request->all();
         User::create($request);
-        return redirect()->route('login');
+        return redirect()->route('login')->with('success', 'Registered Successfully');
     }
 
     public function loginForm(){
@@ -76,10 +76,5 @@ class UserController extends Controller
         } else {
         return view('patient/success', compact('user'));
         }
-
-
-
-
-
     }
 }

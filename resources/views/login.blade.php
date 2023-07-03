@@ -78,6 +78,16 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    // swal("Good job!", {{ Session::get('success') }}, "success")
+    //   setTimeout(swal("Good job!", {{ Session::get('success') }}, "success"), 5000);
+    // @if(Session::has('success'))
+    // @php
+    //     Session::forget('success');
+    // @endphp
+    // @endif
+  </script>
   <script>
     var email = document.getElementById("email");
     email.addEventListener("input", function () {
@@ -87,7 +97,6 @@
     mobile.addEventListener("input", function () {
         document.getElementById("email").disabled = this.value != "";
     });
-
   </script>
 </body>
 </html>

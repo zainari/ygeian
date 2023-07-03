@@ -71,10 +71,16 @@ class UserController extends Controller
             $user = User::where('mobile', $request->value)->first();
         }
 
+        return view('loading', compact('user'));
+    }
+
+    public function dashboard($id){
+        $user = User::find($id);
+
         if($user->user_type == 'doctor'){
             return view('doctor/success', compact('user'));
         } else {
-        return view('patient/success', compact('user'));
+            return view('patient/success', compact('user'));
         }
     }
 }

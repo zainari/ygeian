@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOGIN</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 </head>
 <body>
   <div class="container">
@@ -30,5 +30,12 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script>
+    const myTimeout = setTimeout(dashboard, 5000);
+
+    function dashboard() {
+        document.location.href="{{ route('dashboard', ['id' => $user->id]) }}";
+    }
+  </script>
 </body>
 </html>

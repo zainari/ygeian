@@ -21,4 +21,6 @@ Route::post('register', [UserController::class, 'register'])->name('register.pos
 Route::get('/login', [UserController::class, 'loginForm'])->name('login');
 Route::post('/login', [UserController::class, 'login'])->name('login.post');
 Route::post('/verify', [UserController::class, 'verify'])->name('verify');
+Route::get('/dashboard/{id}', [UserController::class, 'dashboard'])->name('dashboard');
+
 

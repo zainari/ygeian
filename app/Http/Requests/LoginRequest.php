@@ -26,6 +26,7 @@ class LoginRequest extends FormRequest
         return [
             'email' => 'required_without_all:mobile|exists:users,email',
             'mobile' => 'required_without_all:email|exists:users,mobile',
+            
         ];
     }
 }

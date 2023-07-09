@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
+body {
+  background-image: url(../img/welcome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 100%;
+  padding-left: 0;
+}
+.welcome-form {
+  /*    max-width: 570px;*/
+  margin: 0;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 63px 60px 28px 60px;
+  border-radius: 0 70px 70px 0;
+}
+.welcome-form h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.terms-links p a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+.terms-links p a:hover {
+  color: #40b4e7;
+}
+.terms-links p {
+  align-self: flex-end;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.terms-links {
+  height: 800px;
+  width: 100%;
+  display: flex;
+}
+.form-group {
+  margin-bottom: 20px;
+  margin-right: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-family: "Karla";
+  color: #3d3e3f;
+  font-size: 24px;
+  font-weight: 400;
+}
+.form-check label a {
+  color: #40b4e7;
+  text-decoration: none;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+  width: 100%;
+  background-color: #e9eaeb;
+  padding: 11px 24px;
+  font-family: "Karla";
+  color: #3d3e3f;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.form-group button {
+  width: 100%;
+  padding: 4px;
+  border: none;
+  background-color: #40b4e7;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 32px;
+  font-family: "Raleway";
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-group button:hover {
+  background-color: #00a6c0;
+  transition: 0.3s;
+}
+.form-group .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-group .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-group .social-icons a:hover {
+  background-color: #0056b3;
+}
+.bottom-links p,
+.bottom-links span {
+  text-align: center;
+}
+.logo {
+  text-align: center;
+  margin-top: 80px;
+}
+.choose-opt {
+  display: flex;
+  align-items: center;
+}
+.bottom-links {
+  text-align: center;
+  color: #3d3e3f;
+  font-family: "Karla";
+  font-size: 20px;
+  margin-top: 30px;
+}
+.bottom-links p a,
+.bottom-links span a {
+  color: #40b4e7;
+  text-decoration: none;
+}
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+hoose-opt .form-group {
+  margin-right: 40px;
+}
+.form-check-input[type="radio"] {
+  height: 30px;
+  width: 30px;
+}
+.form-check-input[type="radio"]:checked {
+  border: none;
+  background-color: #abd3e5;
+  position: relative;
+}
+.form-check-input[type="radio"]:checked:focus,
+.form-check-input[type="checkbox"]:checked:focus {
+  box-shadow: none;
+}
+.form-check-input[type="radio"]:checked:after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: #40b4e7;
+  position: absolute;
+  border-radius: 30px;
+  left: 6.4px;
+  top: 6px;
+  z-index: 100;
+}
+.choose-opt .form-check label {
+  padding-left: 20px;
+}
+.form-group.social-icons svg {
+  width: 38px;
+  height: 38px;
+  margin-left: 26px;
+  color: #40b4e7;
+  transition: 0.3s;
+}
+.form-check-input[type="checkbox"] {
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+.form-check-input:checked[type="checkbox"] {
+  background-color: transparent;
+  background-image: url(../img/vector.png);
+  background-size: 79%;
+  border-color: #40b4e7;
+}
+.form-group.social-icons svg:hover {
+  color: #00a6c0;
+  transition: 0.3s;
+}
+.form-group.copyright {
+  margin-top: 10px;
+}
+.form-group.copyright p {
+  color: #8f9090;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+input:focus-visible {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: #000;
+}
+
+.welcome-form1 {
+  justify-content: center;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 63px 60px 28px 60px;
+  border-radius: 0 70px 70px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.Verifying {
+  font-size: 4rem;
+}
+.spinner {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #00a6c0 !important;
+}
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.code {
+  caret-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  width: 75px;
+  height: 80px;
+  margin: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+/*Media Queries Start Here*/
+@media only screen and (min-width: 1286px) and (max-width: 1450px)  {
+  body {
+    background-image: url(../img/welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+  .welcome-form {
+    max-width: 570px;
+    margin: 0;
+    height: 97vh;
+    background-color: #ffffff;
+    padding: 63px 60px 28px 60px;
+    border-radius: 0 70px 70px 0;
+}
+.terms-links {
+  height: 650px;
+  width: 100%;
+display: flex;
+}
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1285px)  {
+  .code-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    .welcome-form {
+      max-width: 570px;
+      margin: 0;
+      height: 100vh;
+      background-color: #ffffff;
+      padding: 63px 60px 28px 60px;
+      border-radius: 0 70px 70px 0;
+  }
+    .code {
+      caret-color: transparent;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+      border: 1px solid #eee;
+      font-size: 30px;
+      font-family: "Lato", sans-serif;
+      width: 65px;
+      height: 60px;
+      margin: 10px;
+      text-align: center;
+      font-weight: 300;
+    }
+    .terms-links {
+      height: 630px;
+      width: 100%;
+    display: flex;
+    }
+}
+@media screen and (max-width: 1200px) {
+  .welcome-form {
+      max-width: 570px;
+      margin: auto;
+      height: 100%;
+      background-color: #ffffff;
+      padding: 63px 60px 28px 60px;
+      border-radius: 0 70px 70px 0;
+
+  }
+  body {
+    background-image: unset;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+  .terms-links p a {
+    color: #8f9090;
+  }
+  .logom {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+
+        width: 180px;
+        height: 100px;
+
+  }
+
+
+  .Verifying {
+    font-size: 3rem;
+  }
+  .spinner {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 1rem;
+    right: 0rem;
+    color: #00a6c0 !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .logo img {
+    display: none;
+  }
+  .Verifying {
+    font-size: 3rem;
+  }
+  .spinner {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    color: #00a6c0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+  .code {
+    font-size: 24px;
+    height: 50px;
+    max-width: 50px;
+    font-size: bold;
+  }
+
+  .logo img {
+    display: none;
+  }
+  .welcome-form {
+    /* max-width: 570px; */
+    margin: 0;
+
+    background-color: #ffffff;
+    padding: 63px 60px 28px 60px;
+    border-radius: 0 70px 70px 0;
+  }
+  .Verifying {
+    font-size: 2rem;
+  }
+  .spinner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 1rem;
+    right: 0rem;
+    color: #00a6c0 !important;
+  }
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.code:valid {
+  border-color: #00a6c0;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.h5 {
+  text-align: center;
+  color: #3d3e3f;
+}
+.h5login{
+  text-align: center;
+  padding: 1rem;
+}

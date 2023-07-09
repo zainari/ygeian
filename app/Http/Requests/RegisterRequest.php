@@ -20,14 +20,18 @@ class RegisterRequest extends FormRequest
      * Get the validation rules that apply to the request.
      *
      * @return array<string, mixed>
+     *
+     *
      */
+
+
     public function rules()
     {
         return [
-            'first_name' => 'required',
-            'last_name' => 'required',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
-            'mobile' => 'required',
+            'mobile' => 'required|unique:users',
             'user_type' => 'required|in:doctor,patient',
             'terms' => 'required'
         ];

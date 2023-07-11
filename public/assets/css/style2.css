@@ -21,7 +21,7 @@ body {
   margin: 0;
   height: 100%;
   background-color: #ffffff;
-  padding: 63px 60px 28px 60px;
+  padding: 163px 60px 28px 60px;
   border-radius: 0 70px 70px 0;
 }
 .welcome-form h1 {
@@ -52,10 +52,12 @@ body {
   display: flex;
 }
 .form-group {
-  margin-bottom: 20px;
-  margin-right: 1rem;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-
 .form-group label {
   display: block;
   font-weight: bold;
@@ -262,7 +264,7 @@ input:focus-visible {
 /*Media Queries Start Here*/
 @media only screen and (min-width: 1286px) and (max-width: 1450px)  {
   body {
-    background-image: url(../img/welcome.jpg);
+    background-image: url(../img/Welcome2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

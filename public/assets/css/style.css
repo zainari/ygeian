@@ -49,9 +49,13 @@ body {
     width: 100%;
     display: flex;
 }
-    .form-group {
-      margin-bottom: 20px;
-    }
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
 .form-group label {
     display: block;
@@ -256,7 +260,7 @@ input:focus-visible {
 /*Media Queries Start Here*/
 @media only screen and (min-width: 1286px) and (max-width: 1450px)  {
     body {
-      background-image: url(../img/welcome.jpg);
+      background-image: url(../img/Welcome2.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right;
@@ -602,4 +606,15 @@ input:focus-visible {
         border-radius: 0 70px 70px 0;
     }
 }
+
+    .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        position: absolute;
+        top: 11.4rem;
+        left: 14rem;
+        font-size: 0.7rem;
+    }
+
 

@@ -86,7 +86,7 @@ class UserController extends Controller
         } else {
 
             // echo "<script>alert('Invalid Email or password');</script>";
-            return back()->with('error', 'Verification failed. Please try again.');
+            return back()->with([ 'value' => $request->value, 'type' => $request->type, 'error' => 'Verification failed. Please try again.']);
         }
     }
 
